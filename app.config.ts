@@ -9,11 +9,11 @@ const BUNDLE_MAPPING = {
 const environment = process.env
   .EXPO_PUBLIC_ENVIRONMENT as keyof typeof BUNDLE_MAPPING;
 
-const bundleId = BUNDLE_MAPPING[environment];
-
-if (!bundleId) {
-  throw new Error(`EXPO_PUBLIC_ENVIRONMENT is not set correctly`);
+if (!environment && process.env.NODE_ENV === "production") {
+  throw new Error(`EXPO_PUBLIC_ENVIRONMENT is not set`);
 }
+
+const bundleId = BUNDLE_MAPPING[environment ?? "development"];
 
 const config: ExpoConfig = {
   name: "blog-example",
@@ -38,6 +38,7 @@ const config: ExpoConfig = {
       backgroundColor: "#ffffff",
     },
     edgeToEdgeEnabled: true,
+    package: bundleId,
   },
   web: {
     bundler: "metro",

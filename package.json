@@ -9,7 +9,8 @@
     "web": "expo start --web",
     "lint": "expo lint",
     "storybook-generate": "sb-rn-get-stories",
-    "submit:preview": "EXPO_PUBLIC_ENVIRONMENT=preview eas build -p ios --submit --profile preview"
+    "testflight:preview": "EXPO_PUBLIC_ENVIRONMENT=preview eas build -p ios --submit --profile preview",
+    "update:preview": "EXPO_PUBLIC_ENVIRONMENT=preview eas update --channel preview"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",

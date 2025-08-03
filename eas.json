@@ -19,6 +19,9 @@
       "ios": {
         "simulator": false
       },
+      "android": {
+        "buildType": "apk"
+      },
       "env": {
         "EXPO_PUBLIC_ENVIRONMENT": "preview"
       }
@@ -36,6 +39,9 @@
       "ios": {
         "appleTeamId": "KUFRY2HT2D",
         "bundleIdentifier": "com.dannyhw.blogexample"
+      },
+      "android": {
+        "applicationId": "com.dannyhw.blogexample"
       }
     },
     "preview": {
@@ -43,6 +49,9 @@
         "appleTeamId": "KUFRY2HT2D",
         "bundleIdentifier": "com.dannyhw.blogexample-preview",
         "appName": "Blog Example preview"
+      },
+      "android": {
+        "applicationId": "com.dannyhw.blogexample-preview"
       }
     }
   }
