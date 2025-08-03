@@ -4,7 +4,7 @@ export default function RootLayout() {
   return (
     <Stack>
       <Stack.Screen name="index" />
-      <Stack.Protected guard={__DEV__}>
+      <Stack.Protected guard={true}>
         <Stack.Screen
           name="storybook"
           options={{
