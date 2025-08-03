@@ -9,7 +9,12 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dannyhw.blogexample",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "appleTeamId": "KUFRY2HT2D"
     },
     "android": {
       "adaptiveIcon": {
@@ -37,6 +42,19 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "480eeae0-ebf4-4a54-8afe-cc1066b3ffd7"
+      }
+    },
+    "owner": "dannyhw",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/480eeae0-ebf4-4a54-8afe-cc1066b3ffd7"
     }
   }
 }
